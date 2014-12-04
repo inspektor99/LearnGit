@@ -5,7 +5,7 @@ MAX = int(MAX)
 def fib(n):
 	if n < 2:
 		return 1	
-	return n + fib(n-1) # is this correct math? would Fibonacci approve?
+	return fib(n-2) + fib(n-1) # Fibonnaci approved!
 
 for j in range(0, MAX + 1):
 	print "Fib: ", j, fib(j)
